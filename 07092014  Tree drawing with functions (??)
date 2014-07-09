@@ -1,0 +1,31 @@
+"""
+7/9/14
+class lesson
+"""
+
+import turtle
+import random
+
+def tree(length, t, colors):
+	if length > 1:
+		t.color(random.choice(colors))
+		angle = 20 # = 20
+		t.forward(length)
+		t.right(angle)
+		tree(length-3, t, colors) # (length-3, t)
+		t.left(2*angle)
+		tree(length-3, t, colors) # (length-3, t)
+		t.right(angle)
+		t.backward(length)
+	
+def main():
+	t = turtle.Turtle()
+	# changes width of turtle pen
+	t.width(2) # (3)
+	t.left(90) # (90)
+	t.up()
+	t.backward(100) # (100)
+	t.down()
+#	t.color("green")
+	tree(30, t, ['red,' 'blue', 'green', 'yellow', 'pink', 'red', 'blue']) # (30, t)
+main()
