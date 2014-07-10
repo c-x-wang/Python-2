@@ -13,7 +13,8 @@ f13th = 0
 
 for y in years:
 	for m in months:
-		if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12: # m = [1, 3, etc]
+		if m in [1, 3, 5, 7, 8, 10, 12]:
+		#if m == 1 or m == 3 or m == 5 or m == 7 or m == 8 or m == 10 or m == 12: 
 			for d in r31days:
 				count = count + 1
 				
@@ -38,7 +39,8 @@ for y in years:
 						if d == 13:
 							f13th = f13th + 1
 	
-		if m == 4 or m == 6 or m == 9 or m == 11:
+		if m in [4, 6, 9, 11]:
+		#if m == 4 or m == 6 or m == 9 or m == 11:
 			for d in r30days:
 				count = count + 1
 				
@@ -46,6 +48,5 @@ for y in years:
 					if d == 13:
 						f13th = f13th + 1
 				
-# print count
 print "Friday the 13ths:"
 print f13th
