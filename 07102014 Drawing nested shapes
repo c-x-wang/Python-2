@@ -1,0 +1,20 @@
+"""
+7/10/14
+classwork: drawing nested shapes
+"""
+
+import turtle
+
+t = turtle.Turtle()
+
+for i in range(4):
+	t.forward(50)
+	t.left(90)
+	
+for i in range(5):
+	t.forward(50)
+	t.left(72)
+	
+for i in range(6):
+	t.forward(50)
+	t.left(60)
