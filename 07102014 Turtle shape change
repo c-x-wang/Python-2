@@ -1,0 +1,15 @@
+"""
+7/10/14
+turtle shape change
+"""
+
+import turtle
+t = turtle.Turtle()
+
+t.shape("turtle")
+for n in range(360):
+	t.forward(1)
+	t.left(1)
+t.color("green")
+t.left(90)
+t.setpos(0, 50)
