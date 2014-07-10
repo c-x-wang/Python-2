@@ -12,7 +12,7 @@ for n in range(360):
 	t.forward(1)
 	t.left(1)
 """
+t.circle(50)
 t.color("green")
 t.left(90)
 t.setpos(0, 50)
-t.clone();
