@@ -7,7 +7,7 @@ import turtle
 t = turtle.Turtle()
 
 t.up()
-t.goto(0, -100)
+t.goto(-25, -100)
 t.down()
 
 # draw polygon based on sides
@@ -19,4 +19,4 @@ for sides in range(3, 20):
 		# python doesn't normally use decimals, so there is a gap in the drawing 
 		# for numbers that don't go evenly into 360. therefore, use 360.0
 t.left(90)
-t.setpos(-25, -100)
+t.setpos(0, -80)
