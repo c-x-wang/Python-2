@@ -1,0 +1,20 @@
+"""
+7/10/14
+classwork: drawing shapes based on an inputted number of sides
+"""
+
+import turtle
+t = turtle.Turtle()
+
+sides = int(input("Enter a number.")) # ask for sides
+
+t.setpos(-25, -100)
+
+# draw polygon based on sides
+
+for s in range(sides):
+	t.forward(50)
+	t.left(360.0 / sides)
+	# python doesn't normally use decimals, so there is a gap in the drawing 
+	# for numbers that don't go evenly into 360. therefore, use 360.0
+t.setpos(100, -100)
