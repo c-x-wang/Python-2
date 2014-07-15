@@ -1,0 +1,13 @@
+# star with a function
+
+import turtle
+t = turtle.Turtle()
+
+def star(length):
+	for r in range(5):
+		t.forward(length)
+		t.right(144) # or 216, for the opposite direction
+
+t.setpos(-100, 100)
+star(100)
+t.setpos(500, 500)
