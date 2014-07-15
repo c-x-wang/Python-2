@@ -1,0 +1,111 @@
+# a game of tic-tac-toe
+
+rounds = range(2)
+roundcount = 0
+player = input("Enter your position")
+
+for r in rounds:
+	tl = " "
+	tm = " "
+	tr = " "
+	ml = " "
+	mm = " "
+	mr = " "
+	bl = " "
+	bm = " "
+	br = " "
+	print ":clear"
+	print " " + tl + " | " + tm + " | " + tr + " "
+	print "---+---+---"
+	print " " + ml + " | " + mm + " | " + mr + " "
+	print "---+---+---"
+	print " " + bl + " | " + bm + " | " + br + " "
+	
+	for i in range(18):
+		if player == "x tl":
+			tl = "X"
+			player = input("Enter your position.")
+		if player == "x tm":
+			tm = "X"
+			player = input("Enter your position.")
+		if player == "x tr":
+			tr = "X"
+			player = input("Enter your position.")
+		if player == "x ml":
+			ml = "X"
+			player = input("Enter your position.")
+		if player == "x mm":
+			mm = "X"
+			player = input("Enter your position.")
+		if player == "x mr":
+			mr = "X"
+			player = input("Enter your position.")
+		if player == "x bl":
+			bl = "X"
+			player = input("Enter your position.")
+		if player == "x bm":
+			bm = "X"
+			player = input("Enter your position.")
+		if player == "x br":
+			br = "X"
+			player = input("Enter your position.")
+			
+		if player == "o tl":
+			tl = "O"
+			player = input("Enter your position.")
+		if player == "o tm":
+			tm = "O"
+			player = input("Enter your position.")
+		if player == "o tr":
+			tr = "O"
+			player = input("Enter your position.")
+		if player == "o ml":
+			ml = "O"
+			player = input("Enter your position.")
+		if player == "o mm":
+			mm = "O"
+			player = input("Enter your position.")
+		if player == "o mr":
+			mr = "O"
+			player = input("Enter your position.")
+		if player == "o bl":
+			bl = "O"
+			player = input("Enter your position.")
+		if player == "o bm":
+			bm = "O"
+			player = input("Enter your position.")
+		if player == "o br":
+			br = "O"
+			player = input("Enter your position.")
+			
+		if player == "break":
+			break
+			
+		print ":clear"
+		print " " + tl + " | " + tm + " | " + tr + " "
+		print "---+---+---"
+		print " " + ml + " | " + mm + " | " + mr + " "
+		print "---+---+---"
+		print " " + bl + " | " + bm + " | " + br + " "
+		
+		if (tl == "X" and tm == "X" and tr == "X") or (ml == "X" and mm == "X" and mr == "X") or (bl == "X" and bm == "X" and br == "X") or (
+			tl == "X" and ml == "X" and bl == "X") or (tm == "X" and mm == "X" and bm == "X") or (tr == "X" and mr == "X" and br == "X") or (
+			tl == "X" and mm == "X" and br == "X") or (tr == "X" and mm == "X" and bl == "X"):
+			print " "
+			print "GAME OVER."
+			print "WINNER: X"
+			break
+		if (tl == "O" and tm == "O" and tr == "O") or (ml == "O" and mm == "O" and mr == "O") or (bl == "O" and bm == "O" and br == "O") or (
+			tl == "O" and ml == "O" and bl == "O") or (tm == "O" and mm == "O" and bm == "O") or (tr == "O" and mr == "O" and br == "O") or (
+			tl == "O" and mm == "O" and br == "O") or (tr == "O" and mm == "O" and bl == "O"):
+			print " "
+			print "GAME OVER."
+			print "WINNER: O"
+			break
+		elif (tl is "X" or tl is "O") and (tm is "X" or tm is "O") and (tr is "X" or tr is "O") and (
+			ml is "X" or ml is "O") and (mm is "X" or mm is "O") and (mr is "X" or mr is "O") and (
+			bl is "X" or bl is "O") and (bm is "X" or bm is "O") and (br is "X" or br is "O"):
+			print " "
+			print "GAME OVER."
+			print "TIED GAME"
+			break
