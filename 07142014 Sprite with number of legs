@@ -1,0 +1,15 @@
+# sprite with specified number of "legs"
+
+import turtle
+t = turtle.Turtle()
+
+legs = int(input("Enter a number."))
+
+def sprite(legs):
+	for i in range(legs):
+		t.forward(50)
+		t.backward(50)
+		t.right(360.0 / legs)
+
+sprite(legs)
+t.setpos(200, 200)
