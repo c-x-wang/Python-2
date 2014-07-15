@@ -1,0 +1,45 @@
+#printing a tic-tac-toe board
+
+tl = " "
+tm = " "
+tr = " "
+ml = " "
+mm = " "
+mr = " "
+bl = " "
+bm = " "
+br = " "
+
+gap = " "
+
+true = True
+	
+print "  |  |  "
+print "__|__|__"
+print "  |  |  "
+print "__|__|__"
+print "  |  |  "
+print "  |  |  "
+
+print "x |o |x "
+print "__|__|__"
+print "x |x |o "
+print "__|__|__"
+print "o |x |o "
+print "  |  |  " #+ string
+
+
+if true:
+	gap = "x"
+else:
+	gap = " "
+
+print " "
+print " "
+	
+print tl + " |" + tm + " |" + tr + " "
+print "__|__|__"
+print ml + " |" + mm + " |" + mr + " "
+print "__|__|__"
+print bl + " |" + bm + " |" + br + " "
+print "  |  |  "
