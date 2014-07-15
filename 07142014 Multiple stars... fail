@@ -1,0 +1,14 @@
+# multiple stars... fail
+
+import turtle
+t = turtle.Turtle()
+
+def star(length):
+	for s in range(5):
+		for r in range(4):
+			t.forward(length)
+			t.right(144)
+		t.forward(length + 20)
+
+star(70)
+t.setpos(500, 500)
