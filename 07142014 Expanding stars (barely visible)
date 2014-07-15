@@ -1,0 +1,15 @@
+# expanding stars (sort of)
+
+import turtle
+t = turtle.Turtle()
+
+
+def star(length):
+	for s in range(50):
+		t.forward(s + 50)
+		t.right(144)
+		s = s + 5
+
+t.setpos(-50, 50)
+star(100)
+t.setpos(500, 500)
