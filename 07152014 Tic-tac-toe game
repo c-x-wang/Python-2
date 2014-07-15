@@ -21,7 +21,7 @@ for r in rounds:
 	print "---+---+---"
 	print " " + bl + " | " + bm + " | " + br + " "
 	
-	for i in range(18):
+	for i in range(100):
 		if player == "x tl":
 			tl = "X"
 			player = input("Enter your position.")
