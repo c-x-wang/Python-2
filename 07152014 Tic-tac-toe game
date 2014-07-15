@@ -1,6 +1,6 @@
 # a game of tic-tac-toe
 
-rounds = range(2)
+rounds = range(1)
 roundcount = 0
 player = input("Enter your position")
 
