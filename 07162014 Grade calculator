@@ -1,0 +1,50 @@
+# grade calculator
+
+grade = int(input("Enter your grade percentage."))
+
+if grade >= 90 and grade <= 100:
+	if grade >= 97:
+		print "Your grade is an A+."
+	if grade <= 93:
+		print "Your grade is an A-."
+	if grade > 93 and grade < 97:
+		print "Your grade is an A."
+if grade >= 80 and grade <= 89:
+	if grade >= 87:
+		print "Your grade is a B+."
+	if grade <= 83:
+		print "Your grade is a B-."
+	if grade > 83 and grade < 87:
+		print "Your grade is a B."
+if grade >= 70 and grade <= 79:
+	if grade >= 77:
+		print "Your grade is a C+."
+	if grade <= 73:
+		print "Your grade is a C-."
+	if grade > 73 and grade < 77:
+		print "Your grade is a C."
+if grade >= 60 and grade <= 69:
+	if grade >= 67:
+		print "Your grade is a D+."
+	if grade <= 63:
+		print "Your grade is a D-."
+	if grade > 63 and grade < 67:
+		print "Your grade is a D."
+if grade >= 0 and grade <= 59:
+	print "Your grade is an F."
+
+"""
+97 - 100. A+.
+94 - 96. A. 
+90 - 93. A-. 
+87 - 89. B+. 
+83 - 86. B. 
+80 - 82. B-. 
+77 - 79. C+. 
+73 - 76. C. 
+70 - 72. C-. 
+67 - 69. D+. 
+63 - 66. D. 
+60 - 62. D-. 
+< 60. F.
+"""
