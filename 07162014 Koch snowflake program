@@ -1,0 +1,26 @@
+# koch snowflake program
+
+import turtle
+t = turtle.Turtle()
+
+def kochSnowflake(length):
+	if length <= 1:
+		t.forward(length)
+	else:
+	#	t.forward(length / 3)
+		kochSnowflake(length / 3)
+		t.left(60)
+	#	t.forward(length / 3)
+		kochSnowflake(length / 3)
+		t.right(120)
+	#	t.forward(length / 3)
+		kochSnowflake(length / 3)
+		t.left(60)
+	#	t.forward(length / 3)
+	#	kochSnowflake(length / 3)
+	#	t.left(60)
+		kochSnowflake(length / 3)
+
+t.hideturtle()
+t.setpos(-190, -190)
+kochSnowflake(1000)
