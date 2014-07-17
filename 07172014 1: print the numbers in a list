@@ -1,0 +1,6 @@
+# print the numbers in a list
+
+numberList = [1, 2, 3, 4, 5]
+
+for i in numberList:
+	print i
