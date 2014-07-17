@@ -1,0 +1,12 @@
+# print the mode of a list
+
+n = 0
+m = 0
+numberList = [1, 3, 3, 5, 7]
+
+for i in numberList:
+	if i == n:
+		m = i
+	else: 
+		n = i
+print m
