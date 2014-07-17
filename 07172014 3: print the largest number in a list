@@ -1,0 +1,9 @@
+# print the largest number in a list
+
+n = 0
+numberList = [1, 2, 3, 4, 5]
+
+for i in numberList:
+	if i > n:
+		n = i
+print n
