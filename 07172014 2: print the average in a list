@@ -1,0 +1,10 @@
+# print the average in a list
+
+n = 0
+c = 0
+numberList = [1, 2, 3, 4, 5]
+
+for i in numberList:
+	n = n + i
+	c = c + 1
+print n / float(c)
