@@ -1,0 +1,35 @@
+# Goldbach's conjecture problem [UNFINISHED]
+# any even number greater than 2 can be expressed as the sum of 2 primes.
+
+def goldbach(number):
+	p1 = 0
+	p2 = 0
+	rangeOfFactors = range (2, n)
+	isPrime = True
+	
+	for f in rangeOfFactors:
+		if n % f == 0:
+			isPrime = False
+			break
+			
+	for i in range(1000):
+		break
+goldbach(16)
+
+"""
+rangeOfFactors = range (2, n)
+isPrime = True
+
+for f in rangeOfFactors:
+	if n % f == 0:
+		isPrime = False
+"""
+# 4 - 2, 2
+# 6 - 3, 3
+# 8 - 3, 5
+# 10 - 3, 7
+# 12 - 5, 7
+# 14 - 7, 7
+# 16 - 5, 11
+# 18 - 7, 11
+# 20 = 7, 13
